@@ -31,7 +31,7 @@ jobs:
         sudo apt-get install php
     - uses: actions/checkout@v2        
       with:
-        repository: Codeception/CodeceptJS.git
+        repository: codeceptjs/CodeceptJS
         path: codeceptjs
     - name: npm install
       run: |
