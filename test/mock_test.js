@@ -31,7 +31,7 @@ Scenario('change response data @Puppeteer @WebDriver', ({ I }) => {
 
 Scenario('change response data via mockServer @Puppeteer @WebDriver', ({ I }) => {
   I.amOnPage('/form/fetch_call');
-  I.mockServer({ server } => {
+  I.mockServer(server => {
     server.get('https://jsonplaceholder.typicode.com/*').intercept(({ req, res }) => {
       res.status(200).json({ modified: 'This is modified from mocking' });
     });
