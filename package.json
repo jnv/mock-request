@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "codeceptjs": "^3.0.3",
+    "cross-spawn": "^7.0.3",
     "documentation": "^13.1.0",
     "puppeteer": "^5.5.0",
     "rimraf": "^3.0.2",
